@@ -7,7 +7,8 @@
 # Выходные данные: целое число
 
 
-InputSquare = None
-OutputSquare = None
-FirstLine = 'Введите площадь участка в сотках: \n'
-
+print('Введите площадь участка в сотках: \n')
+InputSquare = int(input())
+Crop = 375
+OutputSquare = InputSquare*100 // Crop
+print(OutputSquare)
