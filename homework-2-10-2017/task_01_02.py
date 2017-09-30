@@ -14,18 +14,18 @@
 
 print('Сколько тарелочек?')
 Plates = int(input())
-print('А моющего средства')
+print('А моющего средства?')
 Detergent = float(input())
-
-while Plates > 0:
+while Plates >= 0:
     if Detergent == 0 and Plates > 0:
-        print('Моющее средство закончилось. Осталось', Plates, ' тарелок')
+        print('Моющее средство закончилось. Осталось', Plates,' тарелок')
         break
     elif Detergent > 0 and Plates == 0:
-        print('Все тарелки вымыты. Осталось', Detergent, ' ед. моющего средства')
+        print('Все тарелки вымыты. Осталось', Detergent,' ед. моющего средства')
         break
     elif Detergent == 0 and Plates == 0:
         print('Все тарелки вымыты, моющее средство закончилось')
         break
     Plates -= 1
     Detergent -= 0.5
+
